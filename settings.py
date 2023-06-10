@@ -1,15 +1,14 @@
 """File with settings and configs for the project"""
-
 from envparse import Env
 
 env = Env()
 
 REAL_DATABASE_URL = env.str(
     "REAL_DATABASE_URL",
-    default="postgresql+asyncpg://postgres:papa1976igor@localhost:5432/education_app"
+    default="postgresql+asyncpg://postgres:papa1976igor@localhost:5432/education_app",
 )  # connect string for the database
 
 TEST_DATABASE_URL = env.str(
     "TEST_DATABASE_URL",
-    default="postgresql+asyncpg://postgres:papa1976igor@localhost:5432/education_app_test"
+    default="postgresql+asyncpg://postgres:papa1976igor@localhost:5432/education_app_test",
 )  # connect string for the test database
