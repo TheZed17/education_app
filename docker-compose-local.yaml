@@ -9,7 +9,7 @@ services:
       - POSTGRES_PASSWORD=papa1976igor
       - POSTGRES_DB=education_app
     ports:
-      - "5433:5433"
+      - "5433:5432"
     extra_hosts:
       - "host.docker.internal:host-gateway"
     networks:
@@ -23,7 +23,7 @@ services:
       - POSTGRES_PASSWORD=papa1976igor
       - POSTGRES_DB=education_app_test
     ports:
-      - "5434:5434"
+      - "5434:5432"
     extra_hosts:
       - "host.docker.internal:host-gateway"
     networks:
