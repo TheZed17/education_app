@@ -5,8 +5,8 @@ import pytest
 
 async def test_create_user(client, get_user_from_database):
     user_data = {
-        "name": "Ihor",
-        "surname": "Deminskyi",
+        "name": "Nikolai",
+        "surname": "Sviridov",
         "email": "lol@kek.com",
         "password": "SamplePass1!",
     }
@@ -29,8 +29,8 @@ async def test_create_user(client, get_user_from_database):
 
 async def test_create_user_duplicate_email_error(client, get_user_from_database):
     user_data = {
-        "name": "Ihor",
-        "surname": "Deminskyi",
+        "name": "Nikolai",
+        "surname": "Sviridov",
         "email": "lol@kek.com",
         "password": "SamplePass1!",
     }
