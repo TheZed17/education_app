@@ -7,6 +7,7 @@ REAL_DATABASE_URL = env.str(
     "REAL_DATABASE_URL",
     default="postgresql+asyncpg://postgres:papa1976igor@localhost:5433/education_app",
 )  # connect string for the database
+APP_PORT = env.int("APP_PORT", default=8000)
 
 TEST_DATABASE_URL = env.str(
     "TEST_DATABASE_URL",
